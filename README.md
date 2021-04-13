@@ -1,58 +1,50 @@
 <h1 align="center">
-Bitwarden SSH Manager
+GO CLI Application Template
 </h1>
 
 <p align="center">
-  <a href="https://omegion.github.io/bw-ssh-docs/" target="_blank">
-    <img width="180" src="https://omegion.github.io/bw-ssh-docs/img/logo.svg" alt="logo">
+  <a href="https://omegion.dev" target="_blank">
+    <img width="180" src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="logo">
   </a>
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/github/workflow/status/omegion/bw-ssh/Code%20Check" alt="Check"></a>
-    <img src="https://coveralls.io/repos/github/omegion/bw-ssh/badge.svg?branch=master" alt="Coverall"></a>
-    <img src="https://goreportcard.com/badge/github.com/omegion/bw-ssh" alt="Report"></a>
-    <a href="http://pkg.go.dev/github.com/omegion/bw-ssh"><img src="https://img.shields.io/badge/pkg.go.dev-doc-blue" alt="Doc"></a>
-    <a href="https://github.com/omegion/bw-ssh/blob/master/LICENSE"><img src="https://img.shields.io/github/license/omegion/bw-ssh" alt="License"></a>
+    <img src="https://img.shields.io/github/workflow/status/omegion/go-cli-template/Test" alt="Test"></a>
+    <img src="https://coveralls.io/repos/github/omegion/go-cli-template/badge.svg?branch=master" alt="Coverall"></a>
+    <img src="https://goreportcard.com/badge/github.com/omegion/go-cli-template" alt="Report"></a>
+    <a href="http://pkg.go.dev/github.com/omegion/go-cli-template"><img src="https://img.shields.io/badge/pkg.go.dev-doc-blue" alt="Doc"></a>
+    <a href="https://github.com/omegion/go-cli-template/blob/master/LICENSE"><img src="https://img.shields.io/github/license/omegion/go-cli-template" alt="License"></a>
 </p>
 
 ```shell
-CLI command to manage SSH keys stored on Bitwarden
+Go CLI application template for Go projects.
 
 Usage:
-  bw-ssh [command]
+  go-cli [command]
 
 Available Commands:
-  add         Add SSH key to Bitwarden.
-  get         Get SSH key from Bitwarden.
   help        Help about any command
   version     Print the version/build number
 
 Flags:
-  -h, --help   help for bw-ssh
+  -h, --help   help for go-cli
 
-Use "bw-ssh [command] --help" for more information about a command.
-
+Use "go-cli [command] --help" for more information about a command.
 ```
 
 ## Requirements
 
-* Have the [Bitwarden CLI tool](https://github.com/bitwarden/cli) installed and available in the `$PATH` as `bw`.
-* Have the `ssh-agent` running in the current session.
+* Req 1
+* Req 2
 
 ## What does it do?
 
-Injects SSL keys to `ssh-agent` stored in Bitwarden.
+A template for Go CLI application.
 
 ## How to use it
 
-1. Login to Bitwarden with `bw`.
-1. Create a folder named `SSHKeys` folder in your Bitwarden.
-1. Add your key pairs to Bitwarden
-
-```shell
-bw-ssh add --name my-server-1 --private-key $PK_PATH --public-key $PUB_KEY
-```
+* how 1
+* how 2
 
 ## Improvements to be made
 
