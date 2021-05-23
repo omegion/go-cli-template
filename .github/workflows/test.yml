@@ -51,6 +51,7 @@ jobs:
         run: |
           go get -v -t -d ./...
           go get -u golang.org/x/lint/golint
+
       - name: go vet
         run: go vet ./...
 
