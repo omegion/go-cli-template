@@ -1,7 +1,10 @@
-ARG GO_VERSION=1.15-alpine3.12
+ARG GO_VERSION=1.16-alpine3.12
 ARG FROM_IMAGE=alpine:3.12
 
-FROM golang:${GO_VERSION} AS builder
+FROM --platform=${BUILDPLATFORM} golang:${GO_VERSION} AS builder
+
+ARG TARGETOS
+ARG TARGETARCH
 
 LABEL org.opencontainers.image.source="https://github.com/omegion/go-cli-template"
 
@@ -15,10 +18,10 @@ RUN apk update && \
   rm -rf /var/cache/apk/* && \
   rm -rf /var/tmp/*
 
-RUN make build-for-container
+RUN make build TARGETOS=$TARGETOS TARGETARCH=$TARGETARCH
 
 FROM ${FROM_IMAGE}
 
-COPY --from=builder /app/dist/go-cli-linux /bin/go-cli
+COPY --from=builder /app/dist/go-cli /bin/go-cli
 
 ENTRYPOINT ["go-cli"]
