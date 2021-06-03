@@ -2,6 +2,8 @@ package main
 
 import (
 	"os"
+
+	"github.com/omegion/go-cli/cmd"
 )
 
 func main() {
