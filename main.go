@@ -1,9 +1,14 @@
 package main
 
 import (
-	"github.com/omegion/go-cli/cmd"
+	"os"
 )
 
 func main() {
-	cmd.Execute()
+	commander := cmd.NewCommander()
+	commander.Setup()
+
+	if err := commander.Root.Execute(); err != nil {
+		os.Exit(1)
+	}
 }
