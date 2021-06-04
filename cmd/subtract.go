@@ -8,13 +8,13 @@ import (
 )
 
 // Subtract subtracts two numbers.
-func Subtract(commander *Commander) *cobra.Command {
+func Subtract() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:     "subtract [num1] [num2]",
 		Short:   "Subtracts two numbers",
 		Long:    "Subtracts two numbers",
 		Example: "  subtract --num1 1 --num2 2",
-		RunE:    commander.WithClient(subtractNumbersE),
+		RunE:    client.With(subtractNumbersE),
 	}
 
 	cmd.Flags().Int("num1", 0, "Number 1")

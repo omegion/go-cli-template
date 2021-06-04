@@ -10,7 +10,7 @@ import (
 )
 
 // Version prints version/build.
-func Version(commander *Commander) *cobra.Command {
+func Version() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "version",
 		Short: "Print the version/build number",

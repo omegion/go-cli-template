@@ -8,13 +8,13 @@ import (
 )
 
 // Add adds two numbers.
-func Add(commander *Commander) *cobra.Command {
+func Add() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:     "add [num1] [num2]",
 		Short:   "Adds two numbers",
 		Long:    "Adds two numbers",
 		Example: "  add --num1 1 --num2 2",
-		RunE:    commander.WithClient(addNumbersE),
+		RunE:    client.With(addNumbersE),
 	}
 
 	cmd.Flags().Int("num1", 0, "Number 1")
