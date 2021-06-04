@@ -4,11 +4,11 @@ import (
 	"testing"
 
 	"github.com/golang/mock/gomock"
-	"github.com/omegion/go-cli/internal/client"
-	"github.com/omegion/go-cli/internal/client/mocks"
-
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/omegion/go-cli/internal/client"
+	"github.com/omegion/go-cli/internal/client/mocks"
 )
 
 func TestSubtract(t *testing.T) {

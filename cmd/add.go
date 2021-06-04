@@ -1,9 +1,10 @@
 package cmd
 
 import (
-	"github.com/omegion/go-cli/internal/client"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
+
+	"github.com/omegion/go-cli/internal/client"
 )
 
 // Add adds two numbers.

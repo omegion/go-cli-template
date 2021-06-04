@@ -3,11 +3,11 @@ package cmd
 import (
 	"testing"
 
-	"github.com/omegion/go-cli/internal/client"
-
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/omegion/go-cli/internal/client"
 )
 
 func TestCommander_NewCommander(t *testing.T) {
