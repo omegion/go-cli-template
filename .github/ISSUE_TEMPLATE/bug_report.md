@@ -19,7 +19,7 @@ A clear and concise description of what you expected to happen.
 
 **Environment:**
 * CLI Version (retrieve with `go-cli version`):
-* Server Operating System/Architecture:
+* Operating System/Architecture:
 
 **Additional context**
 Add any other context about the problem here.
