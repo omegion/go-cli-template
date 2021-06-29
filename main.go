@@ -1,11 +1,12 @@
 package main
 
 import (
-	"github.com/omegion/go-cli/cmd"
 	"os"
 
 	cmd2 "github.com/omegion/cobra-commander"
 	"github.com/spf13/cobra"
+
+	"github.com/omegion/go-cli/cmd"
 )
 
 func main() {
